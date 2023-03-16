@@ -1,6 +1,7 @@
+import { ThemeProvider } from '@mui/material';
+import { mytheme } from '@nese/ui-components';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import './styles.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,7 +10,9 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Welcome to ency-junior!</title>
       </Head>
       <main className="app">
-        <Component {...pageProps} />
+        <ThemeProvider theme={mytheme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
       </main>
     </>
   );

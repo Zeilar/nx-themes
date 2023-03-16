@@ -2,7 +2,6 @@ import { createTheme } from '@mui/material/styles';
 
 import * as customPalette from './customPalette';
 import { DEFAULT_HTML_FONT_SIZE, DEFAULT_SPACING } from './defaults';
-import fonts from './fonts.css';
 import * as typographyVariants from './typography/variants';
 
 declare module '@mui/material/styles' {
@@ -16,9 +15,6 @@ declare module '@mui/material/styles' {
       width?: string | number;
     };
   }
-  interface BreakpointOverrides {
-    lg2: false;
-  }
 }
 
 export const encyJunior = createTheme({
@@ -29,9 +25,6 @@ export const encyJunior = createTheme({
   },
   palette: customPalette,
   spacing: DEFAULT_SPACING,
-  components: {
-    MuiCssBaseline: fonts,
-  },
   breakpoints: {
     values: {
       xs: 0,

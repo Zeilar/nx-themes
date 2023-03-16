@@ -1,3 +1,4 @@
+import '@mui/material/styles';
 import { createTheme, Palette, PaletteOptions } from '@mui/material';
 
 import * as colors from './colors';

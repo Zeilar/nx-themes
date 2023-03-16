@@ -1,3 +1,4 @@
+import '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
 
 import * as customPalette from './customPalette';

@@ -1,3 +1,4 @@
+import '@mui/material/styles';
 // NE theme colors are documented in Figma: https://www.figma.com/file/1YiaU4m8BwsC5JnAEzsih1/NE-Color-Styles
 
 // -- BRAND COLORS
